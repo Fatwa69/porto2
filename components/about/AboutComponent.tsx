@@ -43,11 +43,12 @@ const AboutComponent = () => {
             className="px-12 pb-4 mt-4"
           >
             Choosing our skincare products is a decision that prioritizes your
-            skin's health and radiance. Our products are formulated with
+            skin&apos;s health and radiance. Our products are formulated with
             high-quality, natural ingredients that nourish and protect your
             skin. By using our skincare line, you can maintain a healthy
             complexion, prevent common skin issues like acne and dryness, and
-            enhance your skin's natural barrier against environmental damage.
+            enhance your skin&apos;s natural barrier against environmental
+            damage.
           </motion.p>
           <motion.p
             initial="offscreen"
@@ -57,7 +58,7 @@ const AboutComponent = () => {
           >
             Our commitment to gentle, effective formulations ensures that your
             skin stays hydrated, smooth, and youthful. Trust in our skincare to
-            reveal your skin's true potential and enjoy the confidence that
+            reveal your skin&apos;s true potential and enjoy the confidence that
             comes with a glowing, healthy appearance.
           </motion.p>
         </div>

@@ -36,8 +36,8 @@ const HeroSection = () => {
           with modern science to create effective skincare solutions. We are
           committed to continuous improvement, listening to customer feedback to
           enhance our products and services. By choosing Mamamoon, you are
-          investing in your skin's health and supporting a brand that values
-          integrity, sustainability, and innovation.
+          investing in your skin&apos;s health and supporting a brand that
+          values integrity, sustainability, and innovation.
         </motion.p>
         <motion.div
           initial="offscreen"

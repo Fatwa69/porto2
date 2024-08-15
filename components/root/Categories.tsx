@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -20,9 +21,11 @@ const Categories: React.FC = () => {
           >
             <Link href={"/"}>
             
-            <img
+            <Image
               src={category.icon}
               alt={category.name}
+              width={32}
+              height={32}
               className="w-8 h-8 mx-auto mb-2 items-center"
               />
             <p className="text-sm">{category.name}</p>
