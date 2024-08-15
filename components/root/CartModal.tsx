@@ -24,7 +24,7 @@ const CartModal = () => {
             {/* per item */}
             <div className="flex gap-4">
               <Image
-                src="/products/mascara/1.jpg"
+                src="/products-mascara-1.jpg"
                 alt="Product Image"
                 width={72}
                 height={96}
