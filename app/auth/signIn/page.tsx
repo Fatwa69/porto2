@@ -1,6 +1,4 @@
-// app/auth/signin/page.tsx
-
-"use client"; // This directive makes this component a Client Component
+"use client";
 
 import { signIn, getProviders, ClientSafeProvider } from "next-auth/react";
 import { useEffect, useState } from "react";
@@ -15,18 +13,27 @@ export default function SignInPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
 
   useEffect(() => {
     const fetchProviders = async () => {
-      const res = await getProviders();
-      setProviders(res);
+      try {
+        const res = await getProviders();
+        setProviders(res);
+      } catch (err) {
+        console.error("Error fetching providers", err);
+        setError("Failed to load providers. Please try again.");
+      } finally {
+        setLoading(false);
+      }
     };
     fetchProviders();
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError(null);
 
     const result = await signIn("credentials", {
       redirect: false,
@@ -41,8 +48,12 @@ export default function SignInPage() {
     }
   };
 
-  if (!providers) {
+  if (loading) {
     return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
   }
 
   return (
@@ -83,10 +94,7 @@ export default function SignInPage() {
             />
           </div>
           {error && <p className="text-red-500">{error}</p>}
-          <Button
-            type="submit"
-            className=" text-white px-4 py-2 rounded"
-          >
+          <Button type="submit" className="text-white px-4 py-2 rounded">
             Masuk
           </Button>
         </form>
