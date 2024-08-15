@@ -50,10 +50,10 @@ const page = () => {
               wisdom with modern science to create effective skincare solutions.
               We are committed to continuous improvement, listening to customer
               feedback to enhance our products and services. By choosing
-              Mamamoon, you are investing in your skin&apos;s health and supporting a
-              brand that values integrity, sustainability, and innovation.
               Mamamoon, you are investing in your skin&apos;s health and
               supporting a brand that values integrity, sustainability, and
+              innovation. Mamamoon, you are investing in your skin&apos;s health
+              and supporting a brand that values integrity, sustainability, and
               innovation.
               <br /> <br />
             </motion.p>
@@ -66,9 +66,9 @@ const page = () => {
               wisdom with modern science to create effective skincare solutions.
               We are committed to continuous improvement, listening to customer
               feedback to enhance our products and services. By choosing
-              Mamamoon, you are investing in your skin&apos;s health and supporting a
-              brand that values integrity, sustainability, and innovation.{" "}
-              <br /> <br />{" "}
+              Mamamoon, you are investing in your skin&apos;s health and
+              supporting a brand that values integrity, sustainability, and
+              innovation. <br /> <br />{" "}
               <span className="text-xl font-extrabold tracking-tight">
                 Trust Your Inner Beauty
               </span>
